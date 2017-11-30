@@ -16,4 +16,4 @@ mkdir -p %{buildroot}/usr/local/bin
 cp -a %{_sourcedir}/minikube-linux-amd64 %{buildroot}/usr/local/bin
 
 %files
-%{buildroot}/usr/local/bin/minikube-linux-amd64
+/usr/local/bin/minikube-linux-amd64
