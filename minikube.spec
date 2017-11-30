@@ -13,7 +13,7 @@ Source0: https://storage.googleapis.com/minikube/releases/%{version}/minikube-li
 %install
 %{__rm} -rf %{buildroot}/*
 mkdir -p %{buildroot}/usr/local/bin
-cp -a %{source0} %{buildroot}/usr/local/bin/
+cp -a minikube-linux-amd64 %{buildroot}/usr/local/bin/
 
 %files
 /usr/local/bin/minikube-linux-amd64
