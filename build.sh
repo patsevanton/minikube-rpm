@@ -10,7 +10,7 @@ do
     fi
 done
 
-rm -rf ./rpmbuild/
-mkdir -p ./rpmbuild/{RPMS,SRPMS,BUILD,SOURCES,SPECS}
-cp SOURCES/create-repo-of-dependencies.sh ./rpmbuild/SOURCES
-rpmbuild -bb --define "_topdir `pwd`/rpmbuild" minikube.spec
+rm -rf ~/rpmbuild/
+mkdir -p ~/rpmbuild/{RPMS,SRPMS,BUILD,SOURCES,SPECS}
+spectool -g -R minikube.spec
+rpmbuild -bb minikube.spec
