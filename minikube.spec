@@ -1,7 +1,7 @@
 %global _prefix /usr/local
 
 Name:    minikube
-Version: 0.24.0
+Version: 0.25.2
 Release: 1%{?dist}
 Summary: Run Kubernetes locally
 
